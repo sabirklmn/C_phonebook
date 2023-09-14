@@ -49,7 +49,23 @@ void print_menu()
 }
 
 
+void add_person()
+{
+    system("clear");
+    FILE *fp;
+    fp= fopen("phonebook_db", "ab+");
+    if(fp == NULL)
+    {
+        printf("error in file opening, plz try again !\n");
+        printf("Press any key to continue....\n");
+        return;
 
+    }
+    else
+    {
+        
+    }
+}
 
 
 
