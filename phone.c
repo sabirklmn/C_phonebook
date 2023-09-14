@@ -63,7 +63,14 @@ void add_person()
     }
     else
     {
-        
+        person p;
+        take_input(&p);
+        fwrite(&p, sizeof(p), 1,fp);
+        fflush(stdin);
+        fclose(fp);
+        system("clear");
+        printf("Record added Succesfully\n");
+        printf("Press any key to key to continue....\n");
     }
 }
 
